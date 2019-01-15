@@ -1,0 +1,8 @@
+Video samples :
+
+- MPEG4-TS : rpidatv.ts (courtesy @F5OEOEvariste)
+             can also be downloaded from here : https://github.com/LamaBleu/Pluto-DATV-test/raw/master/samples/MPEG4-rpidatv.ts
+- MPEG2-TS is also available here : https://github.com/LamaBleu/Pluto-DATV-test/raw/master/samples/MPEG2-lalinea.ts
+
+
+

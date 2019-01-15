@@ -1,0 +1,28 @@
+# Device Configuration File
+# Edit, Save and then Eject the USB Drive
+
+[NETWORK]
+hostname = pluto
+ipaddr = 10.40.0.155
+ipaddr_host = 10.42.0.1
+netmask = 255.0.0.0
+
+[WLAN]
+ssid_wlan = 
+pwd_wlan = 
+ipaddr_wlan = 
+
+[USB_ETHERNET]
+ipaddr_eth = 
+netmask_eth = 255.255.255.0
+
+[SYSTEM]
+xo_correction = 39999769
+udc_handle_suspend = 0
+
+[ACTIONS]
+diagnostic_report = 0
+dfu = 0
+reset = 0
+calibrate = 0
+

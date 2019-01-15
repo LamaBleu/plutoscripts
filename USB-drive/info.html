@@ -1,0 +1,232 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>ADALM-PLUTO On-board documenation</title>
+<meta name="description" content="ADALM-PLUTO On board docs">
+
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<!-- Place favicon.ico in the root directory -->
+<link type="text/css" href="./img/style.css" rel="stylesheet">
+</head>
+<body>
+<!--[if lte IE 11]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<header id="top">
+<a href="http://www.analog.com">
+<img src="img/ADI_Logo_AWP.png" alt="Analog Devices logo" />
+</a>
+<div class="anchor">
+<a href="#" title="English">English</a> |
+<a href="./img/index_de.html" title="Deutsch (German)">Deutsch</a> |
+<a href="./img/index_fr.html" title="Français (French)">Français</a> |
+<a href="./img/index_es.html" title="Español (Spanish)">Español</a> |
+<a href="./img/index_br.html" title="Português (Portuguese)">Português</a> |
+<a href="./img/index_cn.html" title="简体中文 (Chinese)">简体中文</a> |
+<a href="./img/index_jp.html" title="日本語 (Japanese)">日本語</a> |
+<a href="./img/index_ru.html" title="Руccкий (Russian)">Руccкий</a>
+</div>
+</header>
+
+<nav>
+<a class="button" href="#started">Get Started</a>
+<a class="button" href="#firmware">Firmware</a>
+<a class="button" href="#version">Version</a>
+<a class="button" href="#settings">Settings</a>
+<a class="button" href="#support">Help and Support</a>
+<a class="button" href="LICENSE.html">License</a>
+<a class="button" href="#about">About Analog Devices</a>
+</nav>
+<hr>
+<section>
+<h1>Welcome to the <strong>ADALM-PLUTO</strong> Active Learning Module</h1>
+<a href="http://www.analog.com/education"><img src="./img/prof_blue.png" alt="ADI Professor" style="float:left" /></a>
+<p>Thank you for purchasing the ADALM-PLUTO Active Learning Module (PlutoSDR). The easy to use ADALM-PLUTO active learning module (PlutoSDR) helps introduce electrical engineering students to the fundamentals of software-defined radio (SDR), radio frequency (RF), and wireless communications. Designed for students at all levels and from all backgrounds, the module can be used for both instructor-led and self-directed learning to help students develop a foundation in real-world RF and communications that they can build on as they pursue science, technology, or engineering degrees.</p>
+<p>Based on the <a href="http://www.analog.com/AD9363">AD9363</a>, The PlutoSDR features independent receive and transmit channels that can be operated in full duplex. The active learning module can generate or acquire RF analog signals from 325 MHz to 3800 MHz at up to 61.44 megasamples per second (MSPS). Small enough to fit in a shirt pocket, the PlutoSDR is completely self-contained and entirely USB powered with the default firmware. Because PlutoSDR is enabled by libiio drivers, it supports OS X® , Windows®,  and Linux®,  which allows students to learn and explore on a variety of host platforms.</p>
+</section>
+<hr>
+<section id="started">
+<a class="anchor" href="#top">Back to top</a>
+<h3>Getting Started</h3>
+<p>The PlutoSDR on line documentation provides instruction on how to set up the software on your host PC to use the ADALM-PLUTO Active Learning Module.</p>
+<ul>
+<li><a href="/leantrx/index.html">LEANTRX page - DVB receiver/transmitter on ADALM-PLUTO from F4DAV</a></li>
+<li><a href="/plot.png">Get last plot from gnuplot</a></li>
+<li><a href="/record.wav">Get last wav record</a></li>
+<li><a href="https://wiki.analog.com/university/tools/pluto/matlab">Using the ADALM-PLUTO with MATLAB</a></li>
+<li><a href="https://wiki.analog.com/university/tools/pluto/gnuradio">Using the ADALM-PLUTO with GNU Radio</a></li>
+<li><a href="https://wiki.analog.com/university/tools/pluto/other">Using the ADALM-PLUTO with other tools</a></li>
+</ul>
+<p>Detailed documentation can be found at the <a href="https://wiki.analog.com/university/tools/pluto">Main Documentation</a> page. Information on regulatory compliance and safety information can be found <a href="https://wiki.analog.com/university/tools/pluto/common/regulatory_compliance">online</a>.</p>
+</section>
+<hr>
+<section id="firmware">
+<a class="anchor" href="#top">Back to top</a>
+<h3>Firmware</h3>
+<p>ADALM-PLUTO Firmware refers to the U-Boot, HDL, Linux kernel, device drivers, and userspace software, that runs on the PlutoSDR which enales the device to communicate to USB host. This is bundled up and given a specific version number for the ADALM-PLUTO device. For help upgrading firmware, check out the <a href="https://wiki.analog.com/university/tools/pluto/common/firmware">online documentation</a>.</p>
+<div id="versionsection" class="download">
+<p><strong>Status of the PlutoSDR firmware:</strong></p>
+<p><span id="versiontest">Need javascript to check (sorry)</span></p>
+<p><a id="plutsdr-fw-download" class="button" href="https://github.com/analogdevicesinc/plutosdr-fw/releases/latest">Check the latest version</a>
+</div>
+<br>
+<p id="version"><strong>Version Information:</strong></p>
+<p>The various parts of the firmware all have their own unique versions as well:</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Analog Devices PlutoSDR Rev.B (Z7010-AD9363)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serial</td>
+<td>104400b8399100151500080041ef64d7bc</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>v0.29-1-g2e94-dirty</td>
+</tr>
+<tr>
+<td>Linux</td>
+<td>Linux pluto 4.9.0-g2398d50 #15 SMP PREEMPT Wed Jan 9 14:06:46 CET 2019 armv7l GNU-Linux</td>
+</tr>
+<tr>
+<td>U-Boot</td>
+<td>U-Boot PlutoSDR v0.20-PlutoSDR-00043-gefdb9e8 (Apr 24 2018 - 16:16:28 +0200)</td>
+</tr>
+<tr>
+<td>FPGA</td>
+<td>2018_r1-1-gd79ca2</td>
+</tr>
+<tr>
+<td>Root FS</td>
+<td>v0.20-8405-g04dce-dirty</td>
+</tr>
+<tr>
+<td>IIO</td>
+<td>Library version: 0.16 (git tag: v0.16)</td>
+</tr>
+</tbody>
+</table>
+<p id="settings"><strong>Configuration Settings:</strong></p>
+<p>On the root file system, there are configuration settings that can modify the default configuration, they currently are:</p>
+<table>
+<tbody>
+<tr>
+<td>Hostname</td>
+<td>pluto</td>
+</tr>
+<tr>
+<td>IP Address (PLUTO)</td>
+<td>10.40.0.155</td>
+</tr>
+<tr>
+<td>IP Address (HOST)</td>
+<td>10.42.0.1</td>
+</tr>
+<tr>
+<td>Netmask</td>
+<td>255.0.0.0</td>
+</tr>
+<tr>
+<td>MAC Address (PLUTO)</td>
+<td>00:05:f7:ca:7c:68</td>
+</tr>
+<tr>
+<td>MAC Address (HOST)</td>
+<td>00:e0:22:4a:02:ac</td>
+</tr>
+</tbody>
+</table>
+
+<p>WIFI</p>
+
+<table>
+<tbody>
+<tr>
+<td>SSID</td>
+<td></td>
+</tr>
+<tr>
+<td>WPA-PSK Passphrase</td>
+<td>********</td>
+</tr>
+<tr>
+<td>IP Address</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Wired Ethernet using a USB Ethernet adapter</p>
+
+<table>
+<tbody>
+<tr>
+<td>IP Address</td>
+<td></td>
+</tr>
+<tr>
+<td>Netmask</td>
+<td>255.255.255.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>To change these settings, check the <a href="https://wiki.analog.com/university/tools/pluto/common/customizing">on-line documentation</a>.</p>
+</section>
+<hr>
+<section id="support">
+<a class="anchor" href="#top">Back to top</a>
+<h3>Help and Support</h3>
+<p>Help and support for the ADALM-PLUTO is provided exclusively <a href="https://wiki.analog.com/university/tools/pluto/help_support">on-line</a>. If you don't have an internet connection on this computer, please find one that does.</p>
+</section>
+<hr>
+<section id="social">
+<div>
+<ul class="quicklinks">
+<li><a href="http://www.analog.com/en/about-adi.html" title="About ADI">About ADI</a></li>
+<li><a href="http://www.analog.com/en/analog-dialogue.html" title="Analog Dialogue">Analog Dialogue</a></li>
+<li><a href="http://www.analog.com/en/about-adi/careers.html" title="Careers">Careers</a></li>
+<li><a href="http://www.analog.com/en/about-adi/careers/students-and-graduates/new-college-graduates.html" title="Students and Graduates">New College Graduates</a></li>
+<li><a href="http://investor.analog.com/" title="Investor Relations">Investor Relations</a></li>
+<li><a href="http://www.analog.com/en/about-adi/news-room.html" title="News Room">News Room</a></li>
+<li><a href="http://www.analog.com/en/about-adi/corporate-information/sales-distribution.html" title="Sales &amp; Distributors">Sales &amp; Distribution</a></li>
+<li><a href="https://form.analog.com/Form_Pages/corporate/parts.aspx" title="College Parts Program">College Parts Program</a></li>
+</ul>
+</div>
+<h3 id="about">About Analog Devices</h3>
+<div class="colLeft">
+<p>Intelligently bridging the digital and analog worlds takes knowledge as well as products. We offer <a href="https://ez.analog.com/welcome">blogs</a>, <a href="http://www.analog.com/en/analog-dialogue.html">technical journals</a> and other <a href="http://www.analog.com/en/index.html">community</a> resources to engineers, scientists, technicians, and students looking to help and share with one another.</p>
+<p>Follow Analog Devices on your favorite <a href="http://www.analog.com/social"> social media site</a>:</p>
+</div>
+<div style="clear: both">
+<p><a href="http://ez.analog.com/welcome" target="_blank" title="Join Analog Devices on EngineerZone"><img src="./img/ez.png" alt="EngineerZone logo"></a>
+<a href="http://www.facebook.com/AnalogDevicesInc" target="_blank" title="Visit Analog Devices on Facebook"><img src="./img/fb.png" alt="FaceBook Logo"></a>
+<a href="https://twitter.com/#!/adi_news" target="_blank" title="Follow Analog Devices on Twitter"><img src="./img/tw.png" alt="Twitter Logo"></a>
+<a href="http://plus.google.com/116502491843999760953/posts" target="_blank" title="Follow us on Google+"><img src="./img/gp.png" alt="Google+ Logo"></a>
+<a href="http://www.linkedin.com/company/3450" target="_blank" title="Join Analog Devices on LinkedIn"><img src="./img/li.png" alt="LinkedIn Logo"></a>
+<a href="http://www.youtube.com/user/AnalogDevicesInc" target="_blank" title="View Analog Devices on YouTube"><img src="./img/yt.png" alt="YouTube Logo"></a>
+<a href="http://www.weibo.com/analogdevices" target="_blank" title="Chinese language information on Sina Weibo"><img src="./img/sw.png" alt="Sina Weibo Logo"></a>
+<a href="http://www.slideshare.com/analogdevicesinc" target="_blank" title="Visit our official SlideShare channel to gain access to technical presentations"><img src="./img/ss.png" alt="SlideShare Logo"></a>
+</p>
+</div>
+</section>
+<hr>
+<footer>
+<p>&copy; 2017 ANALOG DEVICES, INC. ALL RIGHTS RESERVED.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="./img/version.js"></script>
+</body>
+</html>
