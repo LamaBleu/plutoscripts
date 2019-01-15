@@ -1,6 +1,7 @@
 Some scripts I'm using for the Pluto.
 Should work on every Pluto if corresponding applications are installed.
 Have a look to USB-drive/README.txt for details.
+Adapt to your needs and correct my mistakes.
 
 
 Firmware including the scripts and apps, download link : 
