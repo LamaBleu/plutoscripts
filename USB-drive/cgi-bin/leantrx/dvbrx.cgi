@@ -52,7 +52,7 @@ fi
 
 command="leaniiorx  --bufsize $param_bufsize  --nbufs $param_nbufs  -f $param_freq  -s $param_samprate  --bw $param_symbrate  -v  \
 | leansdrserv  --info3-httpd 8003  \
-  leandvb --s16 -f $param_samprate --tune $param_tune --sr $param_symbrate  --sampler $param_sampler  --rrc-rej $param_rrc_rej  --const $param_cstln  --standard $param_standard  --cr $param_cr  $(flagparam $param_viterbi --viterbi)  $(flagparam $param_fastlock --fastlock)  -v --json  --anf 0  --fd-info 3  --fd-const 3  --fd-spectrum 3 $FILE_OUTPUT | nmux -a 10.40.0.155 -p 4444 -n 64"
+  leandvb --s16 -f $param_samprate --tune $param_tune --sr $param_symbrate  --sampler $param_sampler  --rrc-rej $param_rrc_rej  --const $param_cstln  --standard $param_standard  --cr $param_cr  $(flagparam $param_viterbi --viterbi)  $(flagparam $param_fastlock --fastlock)  -v --json  --anf 0  --fd-info 3  --fd-const 3  --fd-spectrum 3 $FILE_OUTPUT | nmux -a 192.168.2.1 -p 4444 -n 64"
 
 echo $command
 eval $command
