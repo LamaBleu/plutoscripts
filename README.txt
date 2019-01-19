@@ -1,14 +1,18 @@
 Some scripts I'm using for the Pluto.
 Should work on every Pluto if corresponding applications are installed.
-Have a look to USB-drive/README.txt for details.
 Adapt to your needs and correct my mistakes.
+
 
 Full doc, see USB-drive/README.txt on : https://github.com/LamaBleu/plutoscripts/tree/master/USB-drive
 
 Screenshots, firmware including the scripts and apps, download link : 
 https://mega.nz/#F!C8hgFASK!C9DfCjU7ou46mG-LNWQTrQ
 
-Take care to the revB submodel before flashing, see below.
+
+
+
+
+Before flashing, take care to the revB submodel : see below.
 
 
 ==============================================
