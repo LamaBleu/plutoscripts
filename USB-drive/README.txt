@@ -6,16 +6,16 @@ LamaBleu 15/01/2018
 APPLICATIONS
 =============
 
-- iio tools : iio-info, libiio 0.16
+- iio tools : iio-info, libiio 0.17
 - CW generator (python) (FG8OJ for CW processing code : https://github.com/fg8oj/cwkeyer)
-- SoapySDR + SoapyRemote 0.6 (Pothosware https://github.com/pothosware/SoapySDR) 
+- SoapySDR + SoapyRemote 0.6.1 (Pothosware https://github.com/pothosware/SoapySDR) 
 - LeanTRX ( + DATV TX scripts)  (F4DAV and PABR team http://www.pabr.org/radio/leantrx/leantrx.en.html)
 - Python 2.7 (+numpy, also  including iio and SoapySDR bindings)
 - rxtools : rx_sdr, rx_fm, rx_power ( Robert X. Seger https://github.com/rxseger/rx_tools)
 - LUAradio (Vanya Sergeev http://luaradio.io)
 - csdr ( + nmux) (Simonyi Károly College for Advanced Studies https://github.com/simonyiszk/csdr)
 - gnuplot + libpng  
-- Busybox utilities  : netcat, timeout, ntpd and more (at and timeout to perform scheduled tasks or end a task).
+- Busybox utilities  : sox, socat, netcat, timeout, ntpd and more (at, timeout to perform scheduled tasks or end a task).
 - Retrogram  (Peter Rakesh https://github.com/r4d10n/retrogram-plutosdr)
 - multimon-ng (Elias Önal https://github.com/EliasOenal/multimon-ng/)
 - OpenWebRX (András Retzler HA7ILM https://sdr.hu)
@@ -204,11 +204,14 @@ LEANTRX and DATV :
 
 LeanTRX home page is available here : http://192.168.2.1/leantrx (or pluto.local/leantrx)
 
-Scripts : to send DATV have a look to /root/DATV folder ! Please respect rules/laws regarding RF transmission.
+Scripts : to send DATV have a look to scripts in /root/DATV folder ! Please respect rules/laws regarding RF transmission.
 
-When receiving DATV using from the DVBRX  page(dvbrx.html), the TS stream is now redirected to 192.168.2.1:4444 using nmux.
-With a bit of luck it is possible to view the stream using VLC on the host computer running :  nc 192.168.2.1 4444 | cvlc -
-However it doesn't always work, depending on the stream (works well using MPEG4 stream sent from RPiDATV, 333kS/s)
+When receiving DATV using from the DVBRX page(dvbrx.html), the TS stream is now redirected to 192.168.2.1:4444 using nmux.
+With a bit of luck it is possible to view the stream using VLC on the host computer running :  
+      nc 192.168.2.1 4444 | cvlc -
+
+However it doesn't always work, depending on the stream (works well using MPEG4 stream sent from RPiDATV, 333kS/s).
+Try replacing cvlc by mplayer.
 See another example below, and have a look to /root/datv-rx-leandvb.sh script to get more inspiration.
 
 
@@ -230,7 +233,7 @@ Send DATV from shell :
 Receive DATV  using LeanTRX and VLC :
 
 - Send DATV RF signal using RpiDATV :  435MHz 250 kS/s FEC 1:2
-- Receive on Pluto side :
+- Receive on Pluto side (in one line):
  leaniiorx --bufsize 65536 --nbufs 32 -f 435e6 -s 2e6 --bw 250e3 -v | leansdrserv --info3-httpd 8003 leandvb --s16  -f 2e6 --tune 0 --sr 250e3 --sampler rrc --rrc-rej 20 --const QPSK --standard DVB-S --cr 1/2 --fastlock -v --json --anf 0 --fd-info 3 --fd-const 3 --fd-spectrum 3 | nc -l -p 4444 192.168.2.1
 - Computer side :  nc 192.168.2.1 4444 | cvlc -
 
