@@ -8,7 +8,9 @@
 
 iio_attr -q -c ad9361-phy voltage0 gain_control_mode slow_attack
 cd /root
-rm fm.*
+
+mv /root/.gnuplot /root/gnuplot.conf
+rm fm.* 2>/dev/null
 fstart=$1
 fstop=$2
 fstep=$3
@@ -35,6 +37,7 @@ echo "# Date Time Fstart Fend Step(Hz)" >> fm.csv
 sed 's/^/#/' fm.dat >> fm.csv
 gnuplot -e "fstart=$fstart;fstop=$fstop;fstep=$fstep"  rtl_power.gnu
 echo "Full PNG plot  : http://pluto.local/plot.png or http://192.168.2.1/plot.png"
+mv /root/gnuplot.conf /root/.gnuplot
 rm fm.plt fm.tmp fm.dat
 
 
