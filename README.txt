@@ -5,7 +5,7 @@ Adapt to your needs and correct my mistakes.
 
 Full doc, see USB-drive/README.txt on : https://github.com/LamaBleu/plutoscripts/tree/master/USB-drive
 
-Firmware including the scripts and apps, download link : 
+Screenshots, firmware including the scripts and apps, download link : 
 https://mega.nz/#F!C8hgFASK!C9DfCjU7ou46mG-LNWQTrQ
 
 Take care to the revB submodel before flashing, see below.
