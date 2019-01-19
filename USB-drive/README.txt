@@ -10,12 +10,12 @@ APPLICATIONS
 - CW generator (python) (FG8OJ for CW processing code : https://github.com/fg8oj/cwkeyer)
 - SoapySDR + SoapyRemote 0.6.1 (Pothosware https://github.com/pothosware/SoapySDR) 
 - LeanTRX ( + DATV TX scripts)  (F4DAV and PABR team http://www.pabr.org/radio/leantrx/leantrx.en.html)
-- Python 2.7 (+numpy, also  including iio and SoapySDR bindings)
+- Python 2.7 + python-numpy, including iio and SoapySDR bindings - with test scripts
 - rxtools : rx_sdr, rx_fm, rx_power ( Robert X. Seger https://github.com/rxseger/rx_tools)
 - LUAradio (Vanya Sergeev http://luaradio.io)
 - csdr ( + nmux) (Simonyi Károly College for Advanced Studies https://github.com/simonyiszk/csdr)
 - gnuplot + libpng  
-- Busybox utilities  : sox, socat, netcat, timeout, ntpd and more (at, timeout to perform scheduled tasks or end a task).
+- Utilities  : sox, socat, netcat, timeout, ntpd and more (at, timeout to perform scheduled tasks or end a task).
 - Retrogram  (Peter Rakesh https://github.com/r4d10n/retrogram-plutosdr)
 - multimon-ng (Elias Önal https://github.com/EliasOenal/multimon-ng/)
 - OpenWebRX (András Retzler HA7ILM https://sdr.hu)
