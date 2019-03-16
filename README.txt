@@ -3,13 +3,26 @@ Should work on every Pluto if corresponding applications are installed.
 Adapt to your needs and correct my mistakes.
 
 
-Full doc, once flshed see USB-drive/README.txt or : https://github.com/LamaBleu/plutoscripts/tree/master/USB-drive
+Full doc, once flashed see USB-drive/README.txt or : https://github.com/LamaBleu/plutoscripts/tree/master/USB-drive
 
 Screenshots, firmware including the scripts and apps, download link : 
 https://mega.nz/#F!C8hgFASK!C9DfCjU7ou46mG-LNWQTrQ
 
+*** Update 15/03/2019  
+ 
+ - Added NFS filesystem support (under NFS subfolder).  
+  You can now mount remote shares using NFS through USB or Wifi, save records and scripts.  
+  Use "nfs_server=" parameter in config.txt to set the remote share to connect.  
+  At mount a script is run to allow you customize your pluto.  
+    
+- It's also possible to mount a remote directory as root filesystem, however this is full of bugs, experimental.  
+  As example I provide 2 filesystems sample, a classic one (mirror of the firmware), and another big one (BFR-filesystem) containing lot of application we can't fit together on the internal flash of Pluto.  
+  
+- Added delaycmd in config.txt to start commands one minute after boot.
 
-
+More details in the NFS-readme.txt file.  
+  
+  
 *** Update 27/01/2019
 
 - wifi is back. Most of tested wifi dongles are supported.
@@ -23,7 +36,6 @@ However it seems Pluto is not able to connect wifi network containing spaces or 
 - Many many thanks to @F5OEO_Evariste for sharing his exprience on DATV and RPi !
 -->  it's now possible to use  webcam on RPi, send videostream to Pluto and transmit via DATV using Pluto..
         All mobile. see details on DATV section
-
 
 
 *** Update 19/01/2019
@@ -49,7 +61,7 @@ It's always possible to downgrade back to official 0.29 version using same DFU c
 
 Type following command :    iio_info | grep variant
  result :    hw_model_variant : 1       --->    compatible with this firmware, 
-                                0      --->    not compatible (or apply workaround at your own risk).  
+                                0       --->    not compatible (or apply workaround at your own risk).  
 
 If you get a "0" result, then do not try to flash this version, wasted time.
 You can also check on the dmesg log if reported n25q256a (not compatible, or apply workaround to unlock) or n25q512a (compatible)
