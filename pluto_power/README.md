@@ -7,15 +7,17 @@ Build pow tool :
 
       gcc -std=gnu99 -g -o pow pow.c -liio -lm -Wall -Wextra
       
-   Test : ./pow -l 430600000 -g 40 -f 3   
+   Test : 
+      ./pow -l 430600000 -g 40 -f 3   
+ 
  result : 430600000 2.49 95.75   
-            freq (Hz), signal (dB), RSSI (dB)   
+ units  : freq (Hz), signal (dB), RSSI (dB)   
             
  
 Test a filter :
 ===============
 
- - pre-requisite gnuplot gnuplot-qt packages  
+ - pre-requisite: gnuplot gnuplot-qt packages  
  - use mini_sna.sh  
  - launch mini_sna.sh. --> parameters : fstart fend step RXgain (freq in kHz)  
                            example : ./mini_sna.sh 410000 470000 500 50  
