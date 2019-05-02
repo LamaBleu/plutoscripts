@@ -1,5 +1,11 @@
-MiniSNA for pluto, using pow tool and gnuplot.
+MiniSNA for pluto, using pow tool and gnuplot
+=============================================
 
+
+pow is a simple tool to get signal level from pluto at a specific frequency.  
+It returns frequency (Hz), signal level (dB), RSSI gathered through IIO (dB)  
+
+Large part of the code is coming from [power.c by ADI](https://github.com/analogdevicesinc/plutosdr_scripts/blob/master/power.c)
 
 
 Build pow tool : 
