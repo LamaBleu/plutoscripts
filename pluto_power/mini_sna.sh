@@ -36,7 +36,7 @@ fbist=$(($freq-100000))
 # RX: get signal level
 # -f 4 = sample rate. Increase up to 50 for a quicker sweep but less accurate.
 rxgain=$4
-./pow -l ${freq} -g ${rxgain} -f 40 >> ./test.csv
+./pow -l ${freq} -g ${rxgain} -f 5 >> ./test.csv
 sleep 0.1
 tail -n 1 ./test.csv
 done
