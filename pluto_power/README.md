@@ -23,4 +23,5 @@ MiniSNA for pluto, using pow tool and gnuplot.
 You can also edit mini-sna.sh to change samplerate (-f) for pow tool.
 Bandwidth is set to 200kHz.
 
-![410-470a](https://user-images.githubusercontent.com/26578895/57102867-b1c15b00-6d24-11e9-85f3-18c58e0aae65.png)
+
+![image](https://user-images.githubusercontent.com/26578895/57102867-b1c15b00-6d24-11e9-85f3-18c58e0aae65.png)
