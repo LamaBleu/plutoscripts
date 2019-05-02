@@ -17,7 +17,7 @@ step=${3}*1000
 # TX : Pluto
 /usr/bin/iio_attr -a -q -c -o ad9361-phy voltage0 hardwaregain -10 1>/dev/null
 /usr/bin/iio_attr -a -q -c -o ad9361-phy voltage0 sampling_frequency 1600000 1>/dev/null
-/usr/bin/iio_attr -a -q -D ad9361-phy bist_prbs 0
+/usr/bin/iio_attr -a -q -D ad9361-phy bist_prbs 0 1>/dev/null
 /usr/bin/iio_attr -a -q -D ad9361-phy bist_tone "1 1 0 0" 1>/dev/null
 
 for freq in $(seq $((fstart)) $((step)) $((fend)))
