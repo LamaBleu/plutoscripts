@@ -8,7 +8,7 @@ It returns frequency (Hz), signal level (dB), RSSI gathered through IIO (dB)
 Large part of the code is coming from [power.c by ADI](https://github.com/analogdevicesinc/plutosdr_scripts/blob/master/power.c)  
   
 Note: another more sophisticated SNA is available here : https://github.com/LamaBleu/limeSNA/tree/plutosdr  
-Still using pow tool, adapted from the nice work of [@nepee](https://github.com/nepeee/limeSNA)
+Still using pow tool, adapted from the nice work of [@nepeee](https://github.com/nepeee/limeSNA)
 
 Build pow tool : 
 ================
