@@ -286,7 +286,7 @@ int main (int argc, char **argv)
             rxgain = (int16_t) atoi(optarg);
             break;
         case 'l':
-            lo_mhz = (long long) atol(optarg);
+            lo_mhz = (long long) atof(optarg);
             break;
         case 'f':
             fs_mhz = (long) atoi(optarg);
