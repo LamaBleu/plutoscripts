@@ -363,7 +363,8 @@ Receive DATV  using LeanTRX and VLC :
  leaniiorx --bufsize 65536 --nbufs 32 -f 435e6 -s 2e6 --bw 250e3 -v | leansdrserv --info3-httpd 8003 leandvb --s16  -f 2e6 --tune 0 --sr 250e3 --sampler rrc --rrc-rej 20 --const QPSK --standard DVB-S --cr 1/2 --fastlock -v --json --anf 0 --fd-info 3 --fd-const 3 --fd-spectrum 3 | nc -l -p 4444 192.168.2.1
 - Computer side :  nc 192.168.2.1 4444 | cvlc -
 
-
+Example using RTLSDR and LEANSDR (RPiDATV as transmitter) : https://www.youtube.com/watch?v=3PxscsdPj8M&t=2s  
+nc tool can be replaced by nmux.  
 
 Transmit DATV : 
 ===============
