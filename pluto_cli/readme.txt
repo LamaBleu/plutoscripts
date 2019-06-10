@@ -2,7 +2,7 @@
 This is a simple CLI to control basic settings of your pluto.  
 Inspired from https://github.com/LamaBleu/moRFeus_listener.
 
-You can control your pluto form shell, or access CLI from the LAN, by using socat or redirecting ports from the host computer to/from pluto.
+You can control your pluto from shell, or access CLI from the LAN, by using socat or redirecting ports from the host computer to/from pluto.
 
 Quick setup :
 - Copy pluto_cli.sh script to your pluto on /usr/bin folder, then run "pluto_cli.sh" from pluto terminal console.
@@ -63,9 +63,9 @@ Command :
 2. If the pluto is connected using wifi, juste use nc or telnet to access pluto_cli.
       nc 192.168.40.13 7778
 
-3. From host computer use "nc 192.168.2.1 7777"
+3. From host computer use "nc 192.168.2.1 7777" (or telnet)
 
-4. If you want to grant access to all computers on the LA you hav to redirect adequate ports on the computer hosting the Pluto.
+4. If you want to grant access to all computers on the LAN you have to redirect adequate ports on the computer hosting the Pluto.
 
 
 LamaBleu (@fonera_cork) 06/2019
