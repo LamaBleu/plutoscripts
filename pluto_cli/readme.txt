@@ -57,13 +57,21 @@ Command :
 
 - Access from network :
 
+!!!!!! WARNING !!!!! 
+Exposing your pluto ports to internet is a big error, and security threat for your LAN.
+You should avoid all risk regarding external connections taking control of your Pluto.
+You are resposible if someone use your pluto to transmit.  
+  
+By applying following steps, ensure your pluto is only open to well-known computers over your LAN ONLY.
+Once said :
+
 1. Run following command on pluto command-line to give LAN access for pluto_cli.sh script:
       socat -t 2 TCP4-LISTEN:7777,fork,crlf,reuseaddr EXEC:/usr/bin/pluto_cli.sh,pty,stderr,echo=0
 
 2. If the pluto is connected using wifi, juste use nc or telnet to access pluto_cli.
       nc 192.168.40.13 7778
 
-3. From host computer use "nc 192.168.2.1 7777" (or telnet)
+3. From host computer use "nc 192.168.2.1 7777" , or "nc pluto.local 7777" (or telnet also working)
 
 4. If you want to grant access to all computers on the LAN you have to redirect adequate ports on the computer hosting the Pluto.
 
