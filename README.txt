@@ -49,7 +49,7 @@ However it seems Pluto is not able to connect wifi network containing spaces or 
 
 PRE-REQUISITE :
 
-Twitter @5GReady user first reported an issue on flashing failing at around 22-23 MB (firmware filesize is 32MB)
+Twitter user @5GReady first reported an issue on flashing failing at around 22-23 MB (firmware filesize is 32MB)
 
 Few investigations showed a batch of 1000 Plutos are not able to support flashing firmware file over 22MB size.
 It's always possible to downgrade back to official 0.29 version using same DFU command, no worries.
@@ -63,10 +63,12 @@ Type following command :    iio_info | grep variant
  result :    hw_model_variant : 1       --->    compatible with this firmware, 
                                 0       --->    not compatible (or apply workaround at your own risk).  
 
-If you get a "0" result, then do not try to flash this version, wasted time.
+If you get a "0" result, then do not try to flash firmware with size over 21 MB, wasted time.
 You can also check on the dmesg log if reported n25q256a (not compatible, or apply workaround to unlock) or n25q512a (compatible)
-Download the "light-version" instead, compatible with all revB boards.
-Workaround exists, be prudent : https://ez.analog.com/university-program/f/q-a/105941/adalm-pluto---firmware-dfu-flashing-fails-at-22-23mb/313815
+Download the "light-version" instead, compatible with all revB boards.  
+
+Workaround exists, be prudent : https://ez.analog.com/university-program/f/q-a/105941/adalm-pluto---firmware-dfu-flashing-fails-at-22-23mb/313815  
+Read carefully the post before applying the mod. Keep in mind once unlocked you have a risk to brick your pluto if you flash a wrong firmware/partition.
 
 INSTALLED APPLICATIONS
 ======================
@@ -104,7 +106,7 @@ My preference goes to DFU flashing (never failed) - you need to have dfu-utils i
  1. Change to the directory you downloaded the firmware
  2. Ask your Pluto to reboot in DFU mode :
      - from SSH enter "device_reboot sf"  --> pluto will reboot to DFUI mode (fixed left LED)
-  or - modify config.txt file on the USB Mass Storage : in [ACTIONS] section change to 'dfu = 1', then eject drive.
+  OR - modify config.txt file on the USB Mass Storage : in [ACTIONS] section change to 'dfu = 1', then eject drive.
  3. Run "dfu-util -a firmware.dfu -D pluto.dfu"
 
 
