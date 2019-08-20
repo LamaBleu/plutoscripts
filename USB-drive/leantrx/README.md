@@ -4,6 +4,10 @@ LeanTRX: a web interface for LeanSDR on embedded SDR platforms.
 
 See http://www.pabr.org/radio/leantrx/
 
+My LEANTRX perso.html homepage (WBFM optimized for Pluto)
+
+![perso_html](https://user-images.githubusercontent.com/26578895/63322696-55f6fe00-c324-11e9-8e0b-9dc85d45e42e.png)
+
 # Development
 
 https://www.github.com/pabr/leantrx (web interface)
